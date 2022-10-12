@@ -1,5 +1,5 @@
 // Immediately-invoked function expression
-(function getJquery() {
+(function() {
     // Load the script
     const script = document.createElement("script");
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
@@ -264,7 +264,7 @@ $(document).ready(function() {
 	console.log('document ready');
 	// add loaded to #content so it unhides
 
-    getJquery();
+
 
 
 	$('#content').addClass('loaded');
