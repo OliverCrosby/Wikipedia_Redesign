@@ -1,17 +1,3 @@
-/*/ Immediately-invoked function expression
-(function() {
-    // Load the script
-    const script = document.createElement("script");
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
-    script.type = 'text/javascript';
-    script.addEventListener('load', () => {
-      console.log(`jQuery ${$.fn.jquery} has been loaded successfully!`);
-      // use jQuery below
-    });
-    document.head.appendChild(script);
-  })();*/
-
-
 function bigPictures() {
 	$('.thumbinner img').each(function() {
 		//console.log($(this).attr("src"));
@@ -258,7 +244,7 @@ function addFonts() {
 	$('head').append('<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">');
 };
 
-
+console.log('document almost? ready');
 
 $(document).ready(function() {
 	console.log('document ready');
