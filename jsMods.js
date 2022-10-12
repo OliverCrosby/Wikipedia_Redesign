@@ -1,4 +1,4 @@
-// Immediately-invoked function expression
+/*/ Immediately-invoked function expression
 (function() {
     // Load the script
     const script = document.createElement("script");
@@ -9,7 +9,7 @@
       // use jQuery below
     });
     document.head.appendChild(script);
-  })();
+  })();*/
 
 
 function bigPictures() {
