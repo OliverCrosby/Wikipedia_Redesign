@@ -244,14 +244,21 @@ function addFonts() {
 	$('head').append('<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">');
 };
 
-console.log('document almost? ready');
+console.log('jsMods has loaded...');
+
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
 
 $(document).ready(function() {
 	console.log('document ready');
 	// add loaded to #content so it unhides
-
-
-
 
 	$('#content').addClass('loaded');
 	//detatch the search bar
