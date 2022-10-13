@@ -249,10 +249,10 @@ function addFonts() {
 window.onload = function() {
     if (window.jQuery) {  
         // jQuery is loaded  
-        alert("Yeah!");
+        console.log("jquery loaded!");
     } else {
         // jQuery is not loaded
-        alert("Doesn't Work");
+        console.log("jquery didna load");
     }
 }
 
