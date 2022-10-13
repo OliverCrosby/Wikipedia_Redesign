@@ -303,7 +303,11 @@ a {
 }
 
 #content a {
-	color: var(--main-link);
+	color: var(--main-link)!important;
+}
+
+#content a:visited {
+	color: var(--main-link)!important;
 }
 
 #rightside a {

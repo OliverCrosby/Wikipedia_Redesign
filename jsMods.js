@@ -244,7 +244,7 @@ function addFonts() {
 	$('head').append('<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">');
 };
 
-console.log('jsMods has loaded...');
+
 
 window.onload = function() {
     if (window.jQuery) {  
@@ -255,6 +255,8 @@ window.onload = function() {
         alert("Doesn't Work");
     }
 }
+
+console.log('jsMods has loaded...');
 
 $(document).ready(function() {
 	console.log('document ready');
