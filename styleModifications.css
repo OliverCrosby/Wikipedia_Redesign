@@ -11,19 +11,19 @@
 
 
 :root {
-    --main-bg: #1f1f1f;	/*   var(----main-bg)   */
-    --right-text: #ffffff99;	/*   var(----right-text)   */
-    --content-bg: rgb(40, 40, 40);	/*   var(----content-bg)   */
-    --content-bg-dark: rgb(23, 23, 23);	/*   var(----content-bg-dark)   */
+    --main-bg: #1f1f1f;	/*   var(--main-bg)   */
+    --right-text: #ffffff99;	/*   var(--right-text)   */
+    --content-bg: rgb(40, 40, 40);	/*   var(--content-bg)   */
+    --content-bg-dark: rgb(23, 23, 23);	/*   var(--content-bg-dark)   */
     --dark-text: #333;	/*   var(----dark-text)   */
-    --content-bg2: rgba(0, 0, 0, 0.8);	/*   var(----content-bg2)   */
-    --solid-bg: #1b1b1b;	/*   var(----solid-bg)   */
-    --header-bg: #1b2e45;	/*   var(----header-bg)   */
+    --content-bg2: rgba(0, 0, 0, 0.8);	/*   var(--content-bg2)   */
+    --solid-bg: #1b1b1b;	/*   var(--solid-bg)   */
+    --header-bg: #1b2e45;	/*   var(--header-bg)   */
     --off-highlight: #3D76BF12;	/*   var(----off-highlight)   */
-    --bg-blue: #18202a;	/*   var(----bg-blue)   */
-    --main-link: #7D9ECA;	/*   var(----main-link)   */
-    --main-text: #ffffffcc;	/*   var(----main-text)   */
-    --night-text: #ffffffaa;	/*   var(----night-text)   */
+    --bg-blue: #18202a;	/*   var(--bg-blue)   */
+    --main-link: #7D9ECA;	/*   var(--main-link)   */
+    --main-text: #ffffffcc;	/*   var(--main-text)   */
+    --night-text: #ffffffaa;	/*   var(--night-text)   */
 }
 
 html {
@@ -95,7 +95,7 @@ p, #content ul {
 div[role="note"], .ambox {
 	position: relative;
 	opacity: 0.5;
-	font-size: 1rem;
+	font-size: inherit;
 	margin-left: 1rem;
 }
 
@@ -106,7 +106,7 @@ div[role="note"]:before, .ambox:before {
 	content: "";
 	width: 4px;
 	height: 100%;
-	background-color: var(----content-bg-dark);
+	background-color: var(--content-bg-dark);
 	border-radius: 4px;
 	position: absolute;
 }
@@ -114,6 +114,7 @@ div[role="note"]:before, .ambox:before {
 .mw-body {
 	border: 0;
 	margin: 0;
+    color: var(--main-text);
 }
 
 main {
@@ -325,7 +326,7 @@ a {
 
 
 table.ambox {
-	background: #14274055;
+	background: #14274055!important;
 	margin: 0 0 0 -1rem;
 	padding: 1rem;
 	border: 0;
