@@ -423,12 +423,13 @@ div.hatnote {
     background-color: var(--main-bg);
     color: var(--right-text);
     padding: 2rem;
-    margin-left: 0;
+    margin-left: 0!important;
     float: none;
     clear: none;
     font-size: 1rem;
     line-height: 1.5em;
-    width: calc(100% - 4rem);
+    /*width: calc(100% - 4rem);*/
+    width: 100%!important;
 }
 
 #rightside .infobox.geography td, #rightside .infobox.geography th {
